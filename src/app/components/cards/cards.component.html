@@ -1,0 +1,101 @@
+<div *ngIf="cardType=='type1'">
+    <div class="grid-feature-cards-1">
+        <div class="image-box" *ngFor="let number of [0,1,2,3];let i=index">
+            <div class="inner-box">
+                <div class="inner-card">
+                    <div class="inner-card_place smalldesc">
+                        <p>
+                            Boston House, Andheri East
+                        </p>
+                        <img src="assets/img/Hearticon.png" srcset="assets/img/Hearticon.png, assets/img/Hearticon@2x.png 2x" alt="">
+                    </div>
+                    <p class="inner-card_price header-3 header-3--grey">₹ 14,299 <span class="strike smalldesc">
+                            ₹28598</span> </p>
+                    <div class="inner-grid smalldesc">
+                        <p class="inner-grid_items">hi</p>
+                        <p class="inner-grid_items">hi</p>
+                        <p class="inner-grid_items">hi</p>
+                        <p class="inner-grid_items">hi</p>
+                        <a href="#" class="smalldesc inner-grid_items button-outline align">Book now</a>
+                        <img src="assets/img/Feedback.png" class="align" alt="feedback">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div *ngIf="cardType=='type2'">
+    <div class="grid-feature-cards-2">
+        <div *ngFor="let number of [0,1,2,3,4];let i=index">
+            <img class="image-box2" srcset="assets/img/Image145.png, assets/img/Image145@2x.png 2x"
+                src="assets/img/Image145.png" alt="image">
+            <div class="caption">
+                <h3 class="header-3 header-3--grey">M3M Woodshire</h3>
+                <p class="smalldesc">Pitt Street Kirribilli NSW 2061</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="cardType=='type3'">
+    <div class="grid-box">
+        <div class="grid-feature-cards-3 grid-feature-cards-3_border" *ngIf="color=='none'">
+            <img class="grid-feature-cards-3_img1 grid-feature-cards-3_center" src="../../assets/img/chair.svg" alt="">
+            <div class="grid-feature-cards-3_center">
+                <p>Single Flexible Pricing</p>
+                <p class="smalldesc smalldesc--lt">Start With One Person</p>
+                <div class="grid-feature-cards-3_flex">
+                    <img class="grid-feature-cards-3_count" src="../../assets/img/Minise.svg" alt="">
+                    <p>1</p>
+                    <img class="grid-feature-cards-3_count" src="../../assets/img/Plus.svg" alt="">
+                </div>
+            </div>
+            <div class="grid-feature-cards-3_center">
+                <p class="smalldesc smalldesc--lt">₹ 6199/month</p>
+                <a href="#"
+                    class="smalldesc smalldesc--lt inner-grid_items button-outline button-outline--colored align grid-feature-cards-3_md">Book
+                    now</a>
+            </div>
+        </div>
+
+        <div class="grid-feature-cards-3 grid-feature-cards-3_border--colored" *ngIf="color=='colored'">
+            <img class="grid-feature-cards-3_img2 grid-feature-cards-3_center colored"
+                src="../../../assets/img/office-desk.svg" alt="">
+            <div class="grid-feature-cards-3_center">
+                <p class="colored">Single Flexible Pricing</p>
+                <p class="smalldesc smalldesc--lt colored">Start With One Person</p>
+                <div class="grid-feature-cards-3_flex colored">
+                    <img src="../../assets/img/cminise.svg" alt="">
+                    <p>1</p>
+                    <img src="../../assets/img/cplus.svg" alt="">
+                </div>
+            </div>
+            <div class="grid-feature-cards-3_center">
+                <p class="smalldesc smalldesc--lt colored">₹ 6199/month</p>
+                <a href="#"
+                    class="smalldesc smalldesc--light inner-grid_items button-full align grid-feature-cards-3_md">Book
+                    now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="cardType=='type4'">
+    <div class="grid-feature-cards-4">
+        <div *ngFor="let number of [0,1,2,3];let i=index">
+            <img class="image-box2" srcset="assets/img/Image157.png, assets/img/Image157@2x.png 2x"
+                src="assets/img/Image157.png" alt="image">
+            <div class="caption-box">
+                <p class="caption-box_text header-3--grey">Awards, Happenings, Spaces</p>
+                <p class="smalldesc smalldesc--lt">
+                    Work from any corner on the entire floor without any interruption. Work from any corner on the
+                    entire floor without any interruption
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

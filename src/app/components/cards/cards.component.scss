@@ -1,0 +1,173 @@
+@import'../../../sass/main';
+
+
+.grid-feature-cards-1 {
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    @media only screen and (max-width:64.375em) {
+        grid-row-gap:14rem;
+    }
+}
+
+
+.grid-feature-cards-2 {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr));
+}
+
+.grid-feature-cards-4 {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+
+}
+
+.grid-feature-cards-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 3rem 2rem;
+    &_center
+    {
+        justify-self: center;
+
+    }
+    &_flex {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    &_img1 {
+        height: 6rem;
+    }
+
+    &_img2 {
+        height: 4rem;
+    }
+
+    &_border {
+        border: 1px solid $light-border;
+        border-radius: 5px;
+        &--colored
+        {   
+            border: 1px solid $color-primary;
+            background-color: $bg-color;
+            border-radius: 5px;
+
+        }
+    }
+    &_md
+    {
+        font-size: 1.2rem;
+        border-radius: 2px;
+    }
+
+    &_count
+    {
+        width: 1.5rem;
+    }
+}
+
+.parent {
+    position: relative;
+}
+
+.image-box {
+    cursor: pointer;
+    position: relative;
+    background-image: url('../../../assets/img/Image139.png');
+    height: 28rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    &:hover .inner-box
+    {
+        box-shadow: 1px 1px 10px;
+
+    }
+}
+
+.image-box2 {
+    width: 100%;
+}
+
+.inner-box {
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+
+}
+
+.inner-card {
+    padding: 1rem;
+
+    &_place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 1.4rem;
+        white-space: nowrap;
+        padding: 0.5rem;
+
+    }
+
+    &_price {
+        font-size: 2.6rem;
+        font-weight: 500;
+        padding: 0.5rem;
+    }
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+    align-items: center;
+
+    &_items {
+        padding: 0.5rem;
+    }
+}
+
+
+.strike {
+    text-decoration: line-through;
+    margin-left: 5px;
+    font-size: 1.8rem;
+    font-weight: normal;
+
+}
+
+.caption {
+    text-align: center;
+    &-box
+    {
+        border: 1px solid $light-border;
+        padding: 2.5rem 2.5rem 2.5rem 1.75rem;
+        border-top-style: none;
+        margin-top: -3px;
+        &_text
+        {
+            font-size: 1.25rem;
+            font-weight: 600;
+            line-height: 3.2rem;
+        }
+    }
+}
+
+.align {
+    justify-self: center;
+
+}
+
+.colored
+{
+    color: $color-primary;
+}

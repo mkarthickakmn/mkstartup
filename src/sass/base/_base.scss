@@ -1,0 +1,28 @@
+@import '~normalize.css';
+
+
+html
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 105rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0 2rem;
+}
+
+.feature-grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media only screen and (max-width:44.3125em) {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+
+    }
+    grid-column-gap: 2rem;
+}

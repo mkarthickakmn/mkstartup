@@ -28,7 +28,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/sass/_main.scss"
             ],
             "scripts": []
           },
@@ -36,16 +36,11 @@
             "production": {
               "budgets": [
                 {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                   "type": "initial",
+                   "maximumWarning": "4mb",
+                   "maximumError": "5mb"
                 }
-              ],
+             ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -96,12 +91,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/sass/_main.scss"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "01f4b718-472c-41a4-a72f-ef18b59c7104"
   }
 }
