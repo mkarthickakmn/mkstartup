@@ -4,6 +4,33 @@ header {
     background-image: url("../../assets/img/Line\ Bg.svg");
 }
 
+/* STICKY NAVIGATION */
+.sticky1 {
+    position: fixed;
+    top: 0;
+    padding: 2rem !important;
+    margin: 0 !important;
+    left: calc((100% - 105rem)/2);
+    right: calc((100% - 105rem)/2);
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+
+    @media only screen and (max-width:64.375em) {
+        position: initial;
+    }
+
+}
+
+.sticky2 {
+    margin-top: 12rem;
+
+    @media only screen and (max-width:64.375em) {
+        margin-top: 0rem;
+    }
+
+}
+
 .header {
     max-width: 105rem;
     margin-left: auto;
@@ -42,11 +69,10 @@ header {
         font-size: 1.6rem;
         gap: 4rem;
 
-        & li
-        {
+        & li {
             cursor: pointer;
-            &:hover
-            {
+
+            &:hover {
                 color: $color-primary;
                 text-decoration: underline;
             }
@@ -78,15 +104,15 @@ header {
         font-size: 1.6rem;
         justify-content: space-between;
 
-        & li
-        {
+        & li {
             cursor: pointer;
-            &:hover
-            {
+
+            &:hover {
                 color: $color-primary;
                 text-decoration: underline;
             }
         }
+
         @media only screen and (max-width:44.31em) {
             font-size: 1.2rem;
         }
@@ -104,11 +130,11 @@ header {
         border-radius: 2px;
         background-color: $color-primary;
 
-        &:hover
-        {
+        &:hover {
             color: white;
             text-decoration: underline;
         }
+
         &--full {
             color: white;
             padding-right: 0.25rem;
@@ -297,7 +323,7 @@ header {
     &-testimony {
         background-image: url('../../assets/img/Line\ Bg.svg');
         background-color: $bg-color;
-        padding: 7rem 14rem 7rem 12rem;
+        padding: 7rem 0rem 7rem 0rem;
 
         @media only screen and (max-width:50em) {
             padding: 7rem 5rem 7rem 5rem;

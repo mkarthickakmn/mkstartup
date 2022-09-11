@@ -1,21 +1,23 @@
 <div *ngIf="cardType=='type1'">
     <div class="grid-feature-cards-1">
-        <div class="image-box" *ngFor="let number of [0,1,2,3];let i=index">
+        <div class="image-box" *ngFor="let card of type1;let i=index">
+            <img [srcset]="card.srcset" [src]="card.image" class="image-box_img" alt="image">
             <div class="inner-box">
                 <div class="inner-card">
                     <div class="inner-card_place smalldesc">
                         <p>
-                            Boston House, Andheri East
+                            {{card.header}}
                         </p>
-                        <img src="assets/img/Hearticon.png" srcset="assets/img/Hearticon.png, assets/img/Hearticon@2x.png 2x" alt="">
+                        <img src="assets/img/Hearticon.png"
+                            srcset="assets/img/Hearticon.png, assets/img/Hearticon@2x.png 2x" alt="">
                     </div>
                     <p class="inner-card_price header-3 header-3--grey">₹ 14,299 <span class="strike smalldesc">
                             ₹28598</span> </p>
                     <div class="inner-grid smalldesc">
-                        <p class="inner-grid_items">hi</p>
-                        <p class="inner-grid_items">hi</p>
-                        <p class="inner-grid_items">hi</p>
-                        <p class="inner-grid_items">hi</p>
+                        <p class="inner-grid_items">unlimited fun</p>
+                        <p class="inner-grid_items">unlimited fun</p>
+                        <p class="inner-grid_items">unlimited fun</p>
+                        <p class="inner-grid_items">unlimited fun</p>
                         <a href="#" class="smalldesc inner-grid_items button-outline align">Book now</a>
                         <img src="assets/img/Feedback.png" class="align" alt="feedback">
                     </div>
@@ -29,12 +31,11 @@
 
 <div *ngIf="cardType=='type2'">
     <div class="grid-feature-cards-2">
-        <div *ngFor="let number of [0,1,2,3,4];let i=index">
-            <img class="image-box2" srcset="assets/img/Image145.png, assets/img/Image145@2x.png 2x"
-                src="assets/img/Image145.png" alt="image">
+        <div *ngFor="let card of type2;let i=index">
+            <img class="image-box2" [srcset]="card.srcset" [src]="card.image" alt="image">
             <div class="caption">
-                <h3 class="header-3 header-3--grey">M3M Woodshire</h3>
-                <p class="smalldesc">Pitt Street Kirribilli NSW 2061</p>
+                <h3 class="header-3 header-3--grey">{{card.header}}</h3>
+                <p class="smalldesc">{{card.desc}}</p>
             </div>
         </div>
     </div>
@@ -86,14 +87,11 @@
 
 <div *ngIf="cardType=='type4'">
     <div class="grid-feature-cards-4">
-        <div *ngFor="let number of [0,1,2,3];let i=index">
-            <img class="image-box2" srcset="assets/img/Image157.png, assets/img/Image157@2x.png 2x"
-                src="assets/img/Image157.png" alt="image">
+        <div *ngFor="let card of type4;let i=index">
+            <img class="image-box3" [srcset]="card.srcset" [src]="card.image" alt="image">
             <div class="caption-box">
-                <p class="caption-box_text header-3--grey">Awards, Happenings, Spaces</p>
-                <p class="smalldesc smalldesc--lt">
-                    Work from any corner on the entire floor without any interruption. Work from any corner on the
-                    entire floor without any interruption
+                <p class="caption-box_text header-3--grey">{{card.header}}</p>
+                <p class="smalldesc smalldesc--lt">{{card.desc}}
                 </p>
             </div>
         </div>
