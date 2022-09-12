@@ -20,7 +20,8 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
       const sectionHeroEl = document.querySelector("header") as HTMLElement;
       let header = document.getElementsByClassName("header");
       let headersection = document.getElementsByClassName("header-section");
-  
+      let height=header[0].getBoundingClientRect().height;
+      console.log(height);
       const obs = new IntersectionObserver(
         function (entries) {
           const ent = entries[0];
@@ -42,7 +43,7 @@ export class LandingPageComponent implements OnInit, AfterViewInit {
           // In the viewport
           root: null,
           threshold: 0,
-          rootMargin:'-90.4px'
+          rootMargin:`-90.4px`
         }
       );
       obs.observe(sectionHeroEl);
