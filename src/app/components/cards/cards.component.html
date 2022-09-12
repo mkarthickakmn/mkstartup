@@ -1,7 +1,8 @@
 <div *ngIf="cardType=='type1'">
     <div class="grid-feature-cards-1">
         <div class="image-box" *ngFor="let card of type1;let i=index">
-            <img [srcset]="card.srcset" [src]="card.image" class="image-box_img" alt="image">
+            <img  srcset="{{card.srcset}}" src="{{card.image}}" class="image-box_img lazy-img" alt="image">
+            
             <div class="inner-box">
                 <div class="inner-card">
                     <div class="inner-card_place smalldesc">
