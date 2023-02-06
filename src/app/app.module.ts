@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { SectionHeadersComponent } from './components/section-headers/section-headers.component';
+import { environment } from 'src/environments/environment.prod';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     CardsComponent,
-    SectionHeadersComponent
+    SectionHeadersComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('/ngsw-worker.js',{enabled:environment.production})
+
   ],
   providers: [],
   bootstrap: [AppComponent]

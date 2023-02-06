@@ -68,7 +68,7 @@ export class CardsComponent implements OnInit,AfterViewInit {
       srcset: 'assets/img/Image157.png, assets/img/Image157@2x.png 2x', image: 'assets/img/Image157.png',
       header: 'Awards, Happenings, Spaces', desc: 'Work from any corner on the entire floor without any interruption. Work from any corner on the entire floor without any interruption'
     }, {
-      srcset: 'assets/img/Image158.png, assets/img/Image158@2x.png 2x', image: 'assets/img/Image158.png',
+      srcset: 'assets/img/Image156.png, assets/img/Image156@2x.png 2x', image: 'assets/img/Image156.png',
       header: 'Awards, Happenings, Spaces', desc: 'Work from any corner on the entire floor without any interruption. Work from any corner on the entire floor without any interruption'
     }, {
       srcset: 'assets/img/Image159.png, assets/img/Image159@2x.png 2x', image: 'assets/img/Image159.png',
