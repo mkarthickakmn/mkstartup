@@ -4,16 +4,16 @@
     "short_name": "mk startup",
     "name": "Karthick's Startup",
     "scope": "/",
-    "start_url": "http://localhost:8080/",
+    "start_url": "https://mkstartup.vercel.app/",
     "background_color": "transparent",
     "display": "fullscreen",
     "orienation":"any",
     "theme":"transparent",
     "icons": [
       {
-        "src": "/assets/img/favicon.ico",
-        "type": "image/ico",
-        "sizes": "16x16"
+        "src": "/assets/img/logo.png",
+        "type": "image/png",
+        "sizes": "144x144"
       }
     ]
   }
