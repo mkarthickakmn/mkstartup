@@ -2,6 +2,7 @@
     "dir":"ltr",
     "lang":"en",
     "short_name": "mk startup",
+    "id":"/",
     "name": "Karthick's Startup",
     "scope": "/",
     "start_url": "https://mkstartup.vercel.app/",
